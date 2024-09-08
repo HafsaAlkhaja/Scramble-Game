@@ -139,11 +139,7 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   transition: all 0.2s;
   
 }
-.zahraa{
-  display:flex;
-  justify-content: center;
-  align-content: center;
-}
+
 
 .btn:last-child {
   margin: 0;

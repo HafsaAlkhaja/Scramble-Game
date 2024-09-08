@@ -2,11 +2,11 @@ const boxes = document.querySelectorAll('.letters div')
 const div = document.querySelector('.newWord')
 const submit = document.querySelector('button')
 const wordArray = []
-const words = ['Stare', 'Tears', 'cloud']
+const words = ['ukelele', 'abandon', 'bubbles']
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
-const newWord = []
+const proceed = document.querySelector('.btn-proceed')
 
 function showWords(word) {
   //splits the string into letters
@@ -18,6 +18,7 @@ function showWords(word) {
     const shuffle = letters[i]
     letters[i] = letters[randLetter]
     letters[randLetter] = shuffle
+    console.log(shuffle)
   }
 
   //prints out the word into the div
@@ -40,28 +41,28 @@ for (let i = 0; i < boxes.length; i++) {
     boxes[i].removeEventListener('click', stop) //used medium
     div.innerHTML += letterChosen
 
-    if (wordArray.length === 5) {
+    const newWord = []
+    if (wordArray.length === 7) {
       const joining = wordArray.join('')
       newWord.push(joining)
       console.log(newWord)
+
+      submit.addEventListener('click', () => {
+        for (let k = 0; k <= CopyWord.length; k++) {
+          if (newWord[0] == CopyWord[k]) {
+            levelWinner.style.opacity = '1'
+            levelWinner.style.pointerEvents = 'all'
+            console.log('true')
+            break
+          }
+          if (newWord[0] !== CopyWord[k]) {
+            levelLoser.style.opacity = '1'
+            levelLoser.style.pointerEvents = 'all'
+            console.log('loser')
+            break
+          }
+        }
+      })
     }
   })
 }
-submit.addEventListener('click', () => {
-  for (let k = 0; k < CopyWord.length; k++) {
-    if (newWord[0] === words[random]) {
-      levelWinner.style.opacity = '1'
-      levelWinner.style.pointerEvents = 'all'
-      
-    }
-
-    if (newWord[0] !== words[random]) {
-      levelLoser.style.opacity = '1'
-      levelLoser.style.pointerEvents = 'all'
-      console.log('loser')
-      console.log(newWord)
-      console.log(CopyWord)
-      
-    }
-  }
-})
