@@ -6,6 +6,7 @@ const words = ['Stare', 'Tears', 'cloud']
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
+const proceed = document.querySelector('.btn-proceed')
 
 
 function showWords(word) {

@@ -33,7 +33,7 @@
   max-width: 270px;
   height: 60px;
   padding: 12px;
-  font-size: 18px;
+  font-size: 50px;
   font-family: "Courier New", monospace;
   color: #000;
   background-color: #fff;
@@ -42,6 +42,7 @@
   outline: none;
   transition: all 0.3s ease;
   box-shadow: 8px 8px 0 #000;
+  
 }
 
 .newWord:placeholder{
@@ -55,7 +56,7 @@
 }
 
 body{
-  background-color:hotpink;
+  background-color:#deb5de;
   text-align: center;
 }
 
@@ -72,6 +73,7 @@ button {
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
   margin: 35px 0;
+  margin-top: 100px;
 }
 
 button:active {
@@ -137,6 +139,11 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   transition: all 0.2s;
   
 }
+.zahraa{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
 
 .btn:last-child {
   margin: 0;
@@ -155,9 +162,9 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
 .wordSec{
  
   justify-content: center;
-  position: relative;
-  width: 100%;
-  max-width: 270px;
+  margin: auto;
+  width: 100%; 
+   max-width: 270px;
   
 }
 
