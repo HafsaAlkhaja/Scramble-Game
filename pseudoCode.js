@@ -7,7 +7,6 @@
 
 2-The menu will have a picture of the game added
 
-
 3-The menu will contain three buttons that are clickable:
 
  a- a Start button to start the game
@@ -50,7 +49,7 @@
 
 3-The letters have to be placed in the right order
 
-4- If the letters where placed in the right order perfectly, The player needs to click the submit button, (maybe will add if answer is correcting, hovering over the button will make it green otherwise it will be red)
+4- If the letters were placed in the right order perfectly, The player needs to click the submit button, (maybe will add if answer is correcting, hovering over the button will make it green otherwise it will be red)
 
 5- if the answer is wrong the same button will turn into a "clear" button for the words to get cleared out of the bar and be placed back in the jumble boxes, so the new array will decrement the contents it has and the original array will be printed out again
 
