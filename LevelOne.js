@@ -1,12 +1,14 @@
 const boxes = document.querySelectorAll('.letters div')
 const div = document.querySelector('.newWord')
-const submit = document.querySelector('button')
+const submit = document.querySelector('.subButton')
 const wordArray = []
 const words = ['Stare', 'Tears', 'cloud']
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
 const newWord = []
+const deleteB = document.querySelector('.delButton')
+
 
 function showWords(word) {
   //splits the string into letters
@@ -33,6 +35,7 @@ function showWords(word) {
 let random = Math.floor(Math.random() * words.length)
 showWords(words[random])
 
+function Picking(){
 for (let i = 0; i < boxes.length; i++) {
   boxes[i].addEventListener('click', function stop() {
     const letterChosen = boxes[i].innerHTML
@@ -42,13 +45,15 @@ for (let i = 0; i < boxes.length; i++) {
 
     if (wordArray.length === 5) {
       const joining = wordArray.join('')
-      newWord.push(joining)
+       newWord.push(joining)
       console.log(newWord)
+      
     }
   })
-}
+}}
+
+Picking()
 submit.addEventListener('click', () => {
-  for (let k = 0; k < CopyWord.length; k++) {
     if (newWord[0] === words[random]) {
       levelWinner.style.opacity = '1'
       levelWinner.style.pointerEvents = 'all'
@@ -64,4 +69,14 @@ submit.addEventListener('click', () => {
       
     }
   }
-})
+)
+deleteB.addEventListener('click', ()=>{
+  if(newWord[0].length === 5){
+     div.innerText=''
+   
+}
+Picking()
+}
+)
+
+

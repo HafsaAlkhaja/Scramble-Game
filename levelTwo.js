@@ -1,12 +1,14 @@
 const boxes = document.querySelectorAll('.letters div')
 const div = document.querySelector('.newWord')
-const submit = document.querySelector('button')
+const submit = document.querySelector('.subButton')
 const wordArray = []
-const words = ['ukelele', 'abandon', 'bubbles']
+const words = ['ukelele', 'thunder', '']
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
-const proceed = document.querySelector('.btn-proceed')
+const newWord = []
+const deleteB = document.querySelector('.delButton')
+
 
 function showWords(word) {
   //splits the string into letters
@@ -18,7 +20,6 @@ function showWords(word) {
     const shuffle = letters[i]
     letters[i] = letters[randLetter]
     letters[randLetter] = shuffle
-    console.log(shuffle)
   }
 
   //prints out the word into the div
@@ -34,6 +35,7 @@ function showWords(word) {
 let random = Math.floor(Math.random() * words.length)
 showWords(words[random])
 
+function Picking(){
 for (let i = 0; i < boxes.length; i++) {
   boxes[i].addEventListener('click', function stop() {
     const letterChosen = boxes[i].innerHTML
@@ -41,28 +43,38 @@ for (let i = 0; i < boxes.length; i++) {
     boxes[i].removeEventListener('click', stop) //used medium
     div.innerHTML += letterChosen
 
-    const newWord = []
     if (wordArray.length === 7) {
       const joining = wordArray.join('')
-      newWord.push(joining)
+       newWord.push(joining)
       console.log(newWord)
-
-      submit.addEventListener('click', () => {
-        for (let k = 0; k <= CopyWord.length; k++) {
-          if (newWord[0] == CopyWord[k]) {
-            levelWinner.style.opacity = '1'
-            levelWinner.style.pointerEvents = 'all'
-            console.log('true')
-            break
-          }
-          if (newWord[0] !== CopyWord[k]) {
-            levelLoser.style.opacity = '1'
-            levelLoser.style.pointerEvents = 'all'
-            console.log('loser')
-            break
-          }
-        }
-      })
+      
     }
   })
+}}
+
+Picking()
+submit.addEventListener('click', () => {
+    if (newWord[0] === words[random]) {
+      levelWinner.style.opacity = '1'
+      levelWinner.style.pointerEvents = 'all'
+      
+    }
+
+    if (newWord[0] !== words[random]) {
+      levelLoser.style.opacity = '1'
+      levelLoser.style.pointerEvents = 'all'
+      console.log('loser')
+      console.log(newWord)
+      console.log(CopyWord)
+      
+    }
+  }
+)
+deleteB.addEventListener('click', ()=>{
+  if(newWord[0].length === 7){
+     div.innerText=''
+   
 }
+Picking()
+}
+)

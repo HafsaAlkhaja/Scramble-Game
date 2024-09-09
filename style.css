@@ -1,38 +1,69 @@
-.letters div {
-  background-color: pink;
-  border: 10px solid white;
-   padding: 20px;
-   margin: 10px 10px;
-    width:200px; 
-    display: flex;
-    flex: auto;
-    justify-content: center;
-    align-items: center;
-    
-    
+.letter {
+  margin:20px;
+  width: 300%;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #fff;
+  border: 4px solid #000000;
+ border-radius: 50px;
+  overflow: hidden;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 5px 5px 0 #000000, 10px 10px 0 #000000;
+  display: grid;
+  grid-template-rows: auto;
   
 }
 .letters{
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
-  background: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  height: 450px;
-  margin: 1rem;
-  position: relative;
-  width: 280px;
- 
+  padding:-1000px;
+  width: 25px;
+  font-family: monospace;
+  align-content: center;
+  margin:auto;
+  display: grid;
+  grid-template-rows: auto;
 
 }
 
+
+.letterBox{
+  display: grid;
+  margin:0px 200px 100px -100px;
+  
+}
+
+
+
+/* 
+ .letter:nth-child(1) {
+  margin: 40px 20px 30px 400px; 
+}
+
+.letter:nth-child(2) {
+  margin: 100px 30px 30px 400px; 
+}
+
+.letter:nth-child(3) {
+  margin: -150px 60px 80px 200px; 
+}
+
+.letter:nth-child(4) {
+  margin: -100px 10px 20px 10px; 
+}
+
+.letter:nth-child(5) {
+  margin: 10px; 
+}  */
+
 .newWord {
+  margin:40px;
+margin-left: -20px;
   width: 100%;
   max-width: 270px;
   height: 60px;
-  padding: 12px;
   font-size: 50px;
   font-family: "Courier New", monospace;
   color: #000;
@@ -72,8 +103,9 @@ button {
   background: #252525;
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
-  margin: 35px 0;
-  margin-top: 100px;
+  display:inline-block;
+  margin:0px;
+  
 }
 
 button:active {
@@ -86,6 +118,7 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
 */
 .level-winner {
   position: absolute;
+  height:150px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -138,11 +171,12 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
   
+  
 }
 
 
 .btn:last-child {
-  margin: 0;
+  margin: 10px;
 }
 
 .btn:hover {
