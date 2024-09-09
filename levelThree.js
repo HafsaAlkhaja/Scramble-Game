@@ -80,7 +80,7 @@ submit.addEventListener('click', () => {
 )
 
 deleteB.addEventListener('click', () => {
-  if (newWord[0].length === 7) {
+  if (newWord[0].length === 5) {
     newWord[0] = ''
     div.innerText = ''
     console.log(newWord[0].length)

@@ -1,5 +1,5 @@
 .letter {
-  margin:20px;
+  margin: 20px;
   width: 300%;
   padding: 15px;
   font-size: 30px;
@@ -7,7 +7,7 @@
   color: #000000;
   background-color: #fff;
   border: 4px solid #000000;
- border-radius: 50px;
+  border-radius: 50px;
   overflow: hidden;
   border-radius: 0;
   outline: none;
@@ -15,27 +15,32 @@
   box-shadow: 5px 5px 0 #000000, 10px 10px 0 #000000;
   display: grid;
   grid-template-rows: auto;
-  
 }
-.letters{
-  padding:-1000px;
+h1 {
+  margin-right: 0px;
+}
+
+.menuButton {
+  margin: 0px 0px 0px -700px;
+}
+
+img {
+  margin-left:800px; 
+}
+.letters {
+  padding: -1000px;
   width: 25px;
   font-family: monospace;
   align-content: center;
-  margin:auto;
+  margin: auto;
   display: grid;
   grid-template-rows: auto;
-
 }
 
-
-.letterBox{
+.letterBox {
   display: grid;
-  margin:0px 200px 100px -100px;
-  
+  margin: 0px 200px 100px -100px;
 }
-
-
 
 /* 
  .letter:nth-child(1) {
@@ -59,13 +64,13 @@
 }  */
 
 .newWord {
-  margin:40px;
-margin-left: -20px;
+  margin: 40px;
+  margin-left: -20px;
   width: 100%;
   max-width: 270px;
   height: 60px;
   font-size: 50px;
-  font-family: "Courier New", monospace;
+  font-family: 'Courier New', monospace;
   color: #000;
   background-color: #fff;
   border: 4px solid #000;
@@ -73,39 +78,42 @@ margin-left: -20px;
   outline: none;
   transition: all 0.3s ease;
   box-shadow: 8px 8px 0 #000;
-  
 }
 
-.newWord:placeholder{
+.newWord:placeholder {
   color: #888;
 }
 
-.newWord:focus{
+.newWord:focus {
   background-color: #000;
   color: #fff;
   border-color: #ffffff;
 }
 
-body{
-  background-color:#deb5de;
+body {
+  background-color: #deb5de;
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
- /* From Uiverse.io by levxyca */ 
+/* From Uiverse.io by levxyca */
 button {
   font-family: monospace;
   font-size: 1.5rem;
-  color: #FAFAFA;
+  color: #fafafa;
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 10px;
-  border: 2px solid #FAFAFA;
+  border: 2px solid #fafafa;
   background: #252525;
   box-shadow: 3px 3px #fafafa;
   cursor: pointer;
-  display:inline-block;
-  margin:0px;
-  
+  display: inline-block;
+  margin: 0px;
 }
 
 button:active {
@@ -118,7 +126,7 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
 */
 .level-winner {
   position: absolute;
-  height:150px;
+  height: 150px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -131,11 +139,11 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-  opacity:0;
+  opacity: 0;
   pointer-events: none;
 }
 
-.level-loser{
+.level-loser {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -149,20 +157,21 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-  opacity:0;
+  opacity: 0;
   pointer-events: none;
 }
 .message {
-  font-size:2rem;
+  font-size: 2rem;
   margin-bottom: 1.6rem;
   margin-top: 0;
-  font-family:monospace;
-
+  font-family: monospace;
 }
 
-.btn, .btn-retry, .btn-proceed{
-  color:inherit;
-  font-family:inherit;
+.btn,
+.btn-retry,
+.btn-proceed {
+  color: inherit;
+  font-family: inherit;
   font-size: inherit;
   background: white;
   padding: 0.3rem 3.4rem;
@@ -170,10 +179,7 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   margin-right: 0rem;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
-  
-  
 }
-
 
 .btn:last-child {
   margin: 10px;
@@ -189,16 +195,13 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   transform: translate(0, 0);
 }
 
-.wordSec{
- 
+.wordSec {
   justify-content: center;
   margin: auto;
-  width: 100%; 
-   max-width: 270px;
-  
+  width: 100%;
+  max-width: 270px;
 }
 
-.wordSec div{
-  padding:10px;
-
+.wordSec div {
+  padding: 10px;
 }
