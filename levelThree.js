@@ -4,7 +4,7 @@ let box =document.querySelector('.letter')
 const div = document.querySelector('.newWord')
 const submit = document.querySelector('.subButton')
 let wordArray = []
-let words = ['ukeleles', 'thunders', 'batterys', 'achieves', 'captains', 'capitals', 'captions', 'bedrooms', 'benefits', 'believes', 'accuseds', 'mysterys', 'projects', 'realitys', 'surgerys', 'silences', 'therapys', 'payments', 'payables', 'penaltys', 'loyaltys', 'dynamics']
+let words = ['ukelele', 'thunders']
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
@@ -20,7 +20,7 @@ function showWords(word) {
   //splits the string into letters
   const letters = word.split('')
  
-  for (let i = letters.length - 1; i > 0; i--) {
+  for (let i = letters.length - 1; i >= 0; i--) {
     const randLetter = Math.floor(Math.random() * (i + 1)) 
     
 
@@ -30,31 +30,24 @@ function showWords(word) {
     letters[randLetter] = shuffle
     
   }
+ 
+
+// adds div elements and prints the words in them 
+for(let i=0; i<letters.length;i++){
+  const div = document.createElement('div')
+  boxes2.appendChild(div)
+  div.classList.add('letter')
+   
   
-console.log(boxes2.length)
-  //prints out the word into the div
-  for (let i = 0; i < boxes.length; i++) {
-    if (i < letters.length) {
-      boxes[i].innerHTML = letters[i]
-     
-    } else {
-      boxes[i].innerHTML = ''
-    }
-    
+  div.innerText=letters[i]
+  
   }
+
+
 }
 
 
-let number =0
-function boxCreator(){
-  
-for(let i=0; i<words[i].length;i++){
-  if(boxes2.length!== words[i].length ){
-  boxes2.appendChild(document.createElement('div')).classList.add('letter')
-  number++
-}
-}
-}
+
 
 let random = Math.floor(Math.random() * words.length)
 showWords(words[random])
@@ -63,8 +56,7 @@ showWords(words[random])
 
 
 function Picking() {
-
-  for (let i = 0; i < boxes.length; i++) {
+  for (let i = 0; i < boxes2.length; i++) {
     boxes[i].addEventListener('click', function stop() {
       const letterChosen = boxes[i].innerHTML
       if (wordArray.length === 7 || wordArray.length === 8 || wordArray.length===9) {
