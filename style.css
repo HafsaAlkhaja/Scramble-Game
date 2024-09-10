@@ -1,8 +1,8 @@
-.letter {
-  margin: 20px;
-  width: 300%;
-  padding: 15px;
-  font-size: 30px;
+.letter, .letters {
+  margin: 30px;
+  width: 110%;
+  padding: 30px;
+  font-size: 50px;
   font-weight: bold;
   color: #000000;
   background-color: #fff;
@@ -11,17 +11,20 @@
   overflow: hidden;
   border-radius: 0;
   outline: none;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
   box-shadow: 5px 5px 0 #000000, 10px 10px 0 #000000;
-  display: grid;
-  grid-template-rows: auto;
-}
+  display:flex;
+  flex-direction: row;
+} 
+
+.letters
 h1 {
   margin-right: 0px;
 }
 
 .menuButton {
   margin: 0px 0px 0px -700px;
+  text-decoration: none;
 }
 
 img {
@@ -29,18 +32,18 @@ img {
   cursor: pointer;
 }
 .letters {
-  padding: -1000px;
-  width: 25px;
+  
   font-family: monospace;
-  align-content: center;
-  margin: auto;
-  display: grid;
-  grid-template-rows: auto;
+  
+  padding:10px;
+  
+  border: #000; 
 }
 
 .letterBox {
-  display: grid;
-  margin: 0px 200px 100px -100px;
+  display: flex;
+  padding:40px;
+  flex-wrap: wrap;
 }
 
 /* 
@@ -115,11 +118,13 @@ button {
   cursor: pointer;
   display: inline-block;
   margin: 0px;
+  text-decoration: none;
 }
 
 button:active {
   box-shadow: none;
   transform: translate(3px, 3px);
+  
 }
 
 /* 
@@ -144,7 +149,7 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   pointer-events: none;
 }
 
-.level-loser {
+.level-loser  {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -162,10 +167,9 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   pointer-events: none;
 }
 .message {
-  font-size: 2rem;
-  margin-bottom: 1.6rem;
-  margin-top: 0;
+   font-size: 2rem;
   font-family: monospace;
+ 
 }
 
 .btn,
@@ -205,4 +209,76 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
 
 .wordSec div {
   padding: 10px;
+}
+
+
+.gameName{
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding:20px;
+  border:10px solid black;
+}
+
+
+
+  .button, .button1, .button2, .button3 {
+    font-family: monospace;
+    font-size: 2.5rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 3px solid #fafafa;
+    background: #282727;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    display: block; 
+    margin-bottom: 30px;
+    text-align: left; 
+    width: 100%; 
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-right: 0px;
+    padding-top: 90px;
+    
+}
+
+ .menuBody{
+  background: url(https://www.howjoyful.com/wp-content/uploads/2013/07/easy-doodles-for-beginners.jpg.webp);
+ }
+
+.instructions{
+  text-align: center;
+
+
+ margin:-400px;
+  width: 500px;
+  padding: 1.6rem 3rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.levels{
+  font-family: "Concert One", sans-serif;
+  font-size: 50px;
+  margin-top: -50px;
+
+}
+
+.menuA{
+text-decoration: none;
+color: white;
 }

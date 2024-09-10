@@ -6,7 +6,7 @@ const words = ['ukelele', 'thunder', 'battery', 'achieve', 'captain', 'capital',
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
-let newWord = []
+let newWord = []      
 const deleteB = document.querySelector('.delButton')
 
 
