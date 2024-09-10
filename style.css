@@ -26,6 +26,7 @@ h1 {
 
 img {
   margin-left:800px; 
+  cursor: pointer;
 }
 .letters {
   padding: -1000px;
