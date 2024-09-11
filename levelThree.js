@@ -126,21 +126,21 @@ image.addEventListener('click', () => {
   levelLoser.style.pointerEvents = 'none'
   newWord = []
   wordArray.length = 0
-  wordArray=''
+  
   AnswerBar.innerHTML = ''
     AnswerBar.innerText = ''
     letterChosen=''
-   
-    for(let i=0;i<boxes.length;i++){
+   let divs = document.querySelectorAll(".letters div")
+    for(let i=divs.length-1;i>=0;i--){
     //  boxes2.children[i].innerHTML.replace(words[random], '')
-    let divs = document.querySelectorAll(".letters div")
+    
     divs[i].remove()
-    console.log(boxes.length)
     console.log(divs[i])
     
     }
    
   showWords(words[random])
+  Picking()
   
 
 })
