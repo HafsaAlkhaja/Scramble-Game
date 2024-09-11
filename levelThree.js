@@ -4,7 +4,7 @@ let box = document.querySelector('.letter')
 const AnswerBar = document.querySelector('.newWord')
 const submit = document.querySelector('.subButton')
 let wordArray = []
-let words = ['mello', 'hello']
+let words = ['colonel', 'epitome','nauseous', 'worcestershire', '']
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
