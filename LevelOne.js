@@ -2,7 +2,7 @@ const boxes = document.querySelectorAll('.letters div')
 const div = document.querySelector('.newWord')
 const submit = document.querySelector('.subButton')
 let wordArray = []
-const words = ['Stare', 'Tears', 'cloud']
+const words = ['stare', 'tears', 'cloud', 'jumbo','quack','quick','chain','crown', 'dance','focus','month','music','games','yield','vital', 'wheel','virus','north','south','touch','trade','sweet','candy','total','plant','sense','radio','party','royal', 'equal','death','dealt','could','broke']
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
@@ -24,6 +24,7 @@ function showWords(word) {
   //prints out the word into the div
   for (let i = 0; i < boxes.length; i++) {
     if (i < letters.length) {
+      
       boxes[i].innerHTML = letters[i]
     } else {
       boxes[i].innerHTML = ''
@@ -32,7 +33,7 @@ function showWords(word) {
 }
 
 let random = Math.floor(Math.random() * words.length)
-showWords(words[random])
+showWords(words[random].toUpperCase())
 
 function Picking() {
   for (let i = 0; i < boxes.length; i++) {
