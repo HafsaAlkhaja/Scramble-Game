@@ -2,7 +2,42 @@ const boxes = document.querySelectorAll('.letters div')
 const div = document.querySelector('.newWord')
 const submit = document.querySelector('.subButton')
 let wordArray = []
-const words = ['stare', 'tears', 'cloud', 'jumbo','quack','quick','chain','crown', 'dance','focus','month','music','games','yield','vital', 'wheel','virus','north','south','touch','trade','sweet','candy','total','plant','sense','radio','party','royal', 'equal','death','dealt','could','broke']
+const words = [
+  'stare',
+  'tears',
+  'cloud',
+  'jumbo',
+  'quack',
+  'quick',
+  'chain',
+  'crown',
+  'dance',
+  'focus',
+  'month',
+  'music',
+  'games',
+  'yield',
+  'vital',
+  'wheel',
+  'virus',
+  'north',
+  'south',
+  'touch',
+  'trade',
+  'sweet',
+  'candy',
+  'total',
+  'plant',
+  'sense',
+  'radio',
+  'party',
+  'royal',
+  'equal',
+  'death',
+  'dealt',
+  'could',
+  'broke'
+]
 const CopyWord = words.map((word) => word)
 const levelWinner = document.querySelector('.level-winner')
 const levelLoser = document.querySelector('.level-loser')
@@ -24,7 +59,6 @@ function showWords(word) {
   //prints out the word into the div
   for (let i = 0; i < boxes.length; i++) {
     if (i < letters.length) {
-      
       boxes[i].innerHTML = letters[i]
     } else {
       boxes[i].innerHTML = ''
@@ -58,27 +92,32 @@ function Picking() {
 }
 
 Picking()
-let count= 0;
+let count = 0
 submit.addEventListener('click', () => {
+  // if (newWord[0] === words[random] && round !== rounds) {
+  //   round++
+  //   (showWords(words[random]).toUpperCase())
+  // }
+
   if (newWord[0] === words[random]) {
     levelWinner.style.opacity = '1'
     levelWinner.style.pointerEvents = 'all'
   }
 
   if (newWord[0] !== words[random]) {
-      count++
-      newWord[0] = ''
-      div.innerText = ''
-      console.log(newWord[0].length)
-      console.log(newWord)
-    } Picking()
-    
-    if(count === 5){
+    count++
+    newWord[0] = ''
+    div.innerText = ''
+    console.log(newWord[0].length)
+    console.log(newWord)
+  }
+  Picking()
+
+  if (count === 5) {
     levelLoser.style.opacity = '1'
     levelLoser.style.pointerEvents = 'all'
-   }
   }
-)
+})
 
 deleteB.addEventListener('click', () => {
   if (newWord[0].length === 5) {
