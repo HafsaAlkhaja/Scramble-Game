@@ -3,6 +3,7 @@ let boxes2 = document.querySelector('.letters')
 let box = document.querySelector('.letter')
 const AnswerBar = document.querySelector('.newWord')
 const submit = document.querySelector('.subButton')
+
 let wordArray = []
 let words = [
   'stare',
@@ -48,6 +49,7 @@ let newWord = []
 const deleteB = document.querySelector('.delButton')
 let retry = document.querySelector('.btn-retry')
 const image = document.querySelector('.img')
+let image2= document.querySelector('.img2')
 let round = 0
 let rounds = 5
 
@@ -122,6 +124,12 @@ submit.addEventListener('click', () => {
     AnswerBar.innerText = ''
     newWord=[]
     letterChosen=''
+    setTimeout(() => {
+      image2.style.opacity = "1"; 
+      setTimeout(() => {
+          image2.style.opacity = "0"; 
+      }, 1000);
+  }, 2);
     
     console.log(newWord)
   }
@@ -197,3 +205,4 @@ image.addEventListener('click', () => {
   
 
 })
+

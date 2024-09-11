@@ -74,23 +74,46 @@ Picking()
 let count = 0
 submit.addEventListener('click', () => {
 
-  if (newWord[0] === words[random] ) {
+  if (newWord[0] === words[random] && count !==5 ) {
     levelWinner.style.opacity = '1'
     levelWinner.style.pointerEvents = 'all'
     console.log(newWord[0])
     console.log(words[random])
   }
-
   if (newWord[0] !== words[random]) {
     count++
-    newWord[0] = ''
+    wordArray.length=0
     AnswerBar.innerText = ''
+    newWord=[]
+    letterChosen=''
+    setTimeout(() => {
+      image2.style.opacity = "1"; 
+      setTimeout(() => {
+          image2.style.opacity = "0"; 
+      }, 1000);
+  }, 2);
+    
+    console.log(newWord)
+  }
+
+  if (newWord[0] !== words[random] && count === 5) {
+    count++
+    wordArray.length=0
+    AnswerBar.innerText = ''
+    newWord=[]
+    letterChosen=''
     
     console.log(newWord)
     levelLoser.style.opacity = '1'
     levelLoser.style.pointerEvents = 'all'
   }
   Picking()
+  if (count === 5) {
+    levelLoser.style.opacity = '1'
+    levelLoser.style.pointerEvents = 'all'
+
+  }
+
 })
 console.log(boxes.length)
 
