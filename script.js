@@ -53,3 +53,8 @@ closee.addEventListener('click', () => {
   gameC.style.pointerEvents = 'none'
 })
 
+timer.addEventListener('click',()=>{
+localStorage.setItem('.button3', 'true')
+
+})
+

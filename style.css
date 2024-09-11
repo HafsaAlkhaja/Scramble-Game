@@ -94,14 +94,50 @@ img {
   border-color: #ffffff;
 }
 
-body {
-  background-color: #deb5de;
+/* body {
+  background-color: #121212; 
+  background-image: 
+      linear-gradient(0deg, transparent 5em, rgba(255, 0, 0, 0.2) 0, transparent 5.1em), 
+      linear-gradient(rgba(255, 255, 255, 0.3) 3px, transparent 0);  
+  background-size: 100% 2em;
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  color: #ffffff;
+}  */
 
+body {
+  /* background-image: 
+  -webkit-linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em),
+  -webkit-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+background-image: 
+  -moz-linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em),
+  -moz-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+background-image: 
+  -o-linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em), 
+  -o-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+background-image: 
+  -ms-linear-gradient(0deg, transparent 5em, rgba(240, 227, 227, 0.2) 0, transparent 5.1em), 
+  -ms-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+-webkit-background-size: 100% 2em;
+-moz-background-size: 100% 2em;
+
+
+background-image: 
+  linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em), 
+  linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
+background-size: 100% 2em; */
+background-color: #ffffff; 
+background-image: 
+    linear-gradient(0deg, transparent 10em, rgba(0, 0, 0, 0.3) 0, transparent 10.1em),  
+    linear-gradient(rgba(0, 0, 0, 0.3) 2px, transparent 0); 
+background-size: 100% 2em;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* From Uiverse.io by levxyca */
@@ -279,7 +315,7 @@ Stolen from https://www.sliderrevolution.com/resources/css-modal/
   font-family: "Concert One", sans-serif;
   font-size: 50px;
   margin-top: -50px;
-
+  color:black;
 }
 
 .menuA{
@@ -305,4 +341,9 @@ color: white;
  height:200px;
  opacity:0;
  pointer-events: none;
+}
+
+.timer{
+  font-size: 50px;
+  color:white;
 }
