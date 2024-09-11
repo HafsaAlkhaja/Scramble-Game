@@ -11,6 +11,7 @@ let closee = document.querySelector('.dialog__close')
 let menuBody = document.querySelector('.menuBody')
 let play= document.querySelector('.button')
 let timer=document.querySelector('.button3')
+
 button1.addEventListener('click', () => {
   button.style.opacity = '1'
   button.style.pointerEvents = 'all'
@@ -51,3 +52,4 @@ closee.addEventListener('click', () => {
   gameC.style.opacity = '0'
   gameC.style.pointerEvents = 'none'
 })
+

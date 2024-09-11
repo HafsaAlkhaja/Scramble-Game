@@ -298,3 +298,13 @@ color: white;
   transition: color 150ms ease;
   
 }
+
+.img2{
+ margin:-70px 0px 0px ;
+ width:200px;
+ height:200px;
+ opacity:1;
+ pointer-events: none;
+ 
+
+}
