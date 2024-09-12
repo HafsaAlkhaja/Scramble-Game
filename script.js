@@ -7,10 +7,12 @@ let gameC = document.querySelector('.custom1')
 let dark = document.querySelector('.btn-dark')
 let light = document.querySelector('.btn-light')
 let gameName = document.querySelector('.gameName')
-let closee = document.querySelector('.dialog__close')
+let close1 = document.querySelector('.dialog__close')
+let close2 =document.querySelector('.dialog__close2')
 let menuBody = document.querySelector('.menuBody')
 let play= document.querySelector('.button')
 let timer=document.querySelector('.button3')
+
 
 button1.addEventListener('click', () => {
   button.style.opacity = '1'
@@ -32,25 +34,37 @@ dark.addEventListener('click', () => {
    custom.style.backgroundColor='black'
    button1.style.backgroundColor='black'
 
-
-
-   
+   localStorage.setItem('darkMode', 'true');
+   localStorage.setItem('lightMode', 'false');
+  
 })
+
+
 
 light.addEventListener('click', () => {
   gameName.style.backgroundColor = 'white'
   gameName.style.color = 'black'
   gameName.style.border= '10px solid black'
-  menuBody.style.backgroundImage="url('https://www.howjoyful.com/wp-content/uploads/2013/07/easy-doodles-for-beginners.jpg.webp')"
+  menuBody.style.backgroundImage="'https://www.howjoyful.com/wp-content/uploads/2013/07/easy-doodles-for-beginners.jpg.webp')"
   play.style.backgroundColor='#282727'
   timer.style.backgroundColor='#282727'
   custom.style.backgroundColor='#282727'
   button1.style.backgroundColor='#282727'
+
+  localStorage.setItem('darkMode', 'true');
+  localStorage.setItem('lightMode', 'false');
+  
+
 })
 
-closee.addEventListener('click', () => {
+close1.addEventListener('click', () => {
   gameC.style.opacity = '0'
   gameC.style.pointerEvents = 'none'
+})
+
+close2.addEventListener('click', () => {
+  button.style.opacity = '0'
+  button.style.pointerEvents = 'none'
 })
 
 timer.addEventListener('click',()=>{

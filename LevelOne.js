@@ -54,7 +54,28 @@ let image2 = document.querySelector('.img2')
 let round = 0
 let rounds = 5
 let timecount = document.querySelector('.timer')
-let time= 10
+let time= 60
+//css globals
+ let levels = document.querySelector('.levels')
+ let bodyColor=document.querySelector('body')
+
+if(localStorage.getItem('darkMode') ==='true'){
+ levels.style.color='white'
+ bodyColor.style.backgroundColor="black"
+ bodyColor.style.backgroundImage="linear-gradient(0deg, transparent 10em, rgba(255, 255, 255, 0.3) 0, transparent 10.1em),  linear-gradient(rgba(255, 255, 255, 0.3) 2px, transparent 0)"
+}
+
+if(localStorage.getItem('lightMode') ==='true'){
+  levels.style.color='black'
+  bodyColor.style.backgroundColor="white"
+  bodyColor.style.backgroundImage="linear-gradient(0deg, transparent 1em, rgba(0, 0, 0, 0.3) 0, transparent 1.1em),  linear-gradient(rgba(0, 0, 0, 0.3) 2px, transparent 0)"
+ 
+ }
+
+
+
+
+
 function startTimer() {
  
   countdown = setInterval(()=>{
@@ -226,6 +247,7 @@ image.addEventListener('click', () => {
     divs[i].remove()
     console.log(divs[i])
   }
+
   let random = Math.floor(Math.random() * words.length)
   randomWord = words[random]
   console.log(randomWord)
@@ -233,4 +255,7 @@ image.addEventListener('click', () => {
 
   Picking()
 })
+
+
+
 

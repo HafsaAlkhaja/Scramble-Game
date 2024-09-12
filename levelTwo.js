@@ -15,7 +15,55 @@ const image = document.querySelector('.img')
 let round = 0
 let rounds = 5
 let randomWord = ''
+let timecount = document.querySelector('.timer')
+let time= 10
+//css globals
+ let levels = document.querySelector('.levels')
+ let bodyColor=document.querySelector('body')
 
+if(localStorage.getItem('darkMode')==='true'){
+ levels.style.color='white'
+ bodyColor.style.backgroundColor="black"
+ bodyColor.style.backgroundImage="linear-gradient(0deg, transparent 10em, rgba(255, 255, 255, 0.3) 0, transparent 10.1em),  linear-gradient(rgba(255, 255, 255, 0.3) 2px, transparent 0) "
+}
+
+if(localStorage.getItem('lightMode') ==='true'){
+  levels.style.color='black'
+  bodyColor.style.backgroundColor="white"
+  bodyColor.style.backgroundImage="linear-gradient(0deg, transparent 1em, rgba(0, 0, 0, 0.3) 0, transparent 1.1em),  linear-gradient(rgba(0, 0, 0, 0.3) 2px, transparent 0)"
+ 
+ }
+
+
+
+
+function startTimer() {
+ 
+  countdown = setInterval(()=>{
+    timecount.innerHTML= `${time}`
+    time--
+
+    if(time<0){
+      clearInterval(countdown)
+   count++
+    wordArray.length = 0
+    AnswerBar.innerText = ''
+    newWord = []
+    letterChosen = ''
+    time=10
+     timecount.innerHTML= `${time}`
+    console.log(newWord)
+    levelLoser.style.opacity = '1'
+    levelLoser.style.pointerEvents = 'all'
+    
+    }
+   
+  }, 1000)
+
+}
+if(localStorage.getItem('.button3') === 'true'){
+startTimer()
+}
 function showWords(word) {
   //splits the string into letters
   // word=word.toString()
