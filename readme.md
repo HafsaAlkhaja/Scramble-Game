@@ -6,6 +6,9 @@
 
 ### [GitHub](https://github.com/HafsaAlkhaja) | [Linkdin](https://www.linkedin.com/in/hafsa-alkhaja-8b70652b4)
 
+### **_GameLink_**
+ - capable-fish.surge.sh
+
 ### **_Description_**
 
 #### The project i'm creating is a Scramble game where a player has to make up a word by clicking on a jumbled set of letters to win the game
@@ -55,6 +58,12 @@
 
 ##### CSS: https://www.sliderrevolution.com/resources/css-modal/
 ##### CSS: https://www.google.com/images
+##### CSS: https://uiverse.io/
+
+#### JS: https://developer.mozilla.org/en-US/
+#### JS: class documents
+#### JS/CSS: https://stackoverflow.com/questions/72822021/how-to-set-light-dark-mode-across-multiple-pages
+
 
 
 
