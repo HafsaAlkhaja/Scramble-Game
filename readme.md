@@ -31,13 +31,14 @@
 
 ### **_Screenshots_**
 
-#### image 1
+#### image 1 - Menu Page
 
-![Huh cat](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftr.rbxcdn.com%2F8bf39eb862074e7825cbb65b10f8c736%2F420%2F420%2FHat%2FPng&f=1&nofb=1&ipt=b9a4c2bf43791baf935b151a3468c9ca89d5c6cac05bac22523eb8bb74d926ab&ipo=images)
+![image](https://github.com/user-attachments/assets/0d81905c-99ad-4643-a8f7-6dfb49024662)
 
-#### image 2
 
-![Angy cat](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1a%2Fc0%2F23%2F1ac0231aa6d74d092328d445aa98183e.jpg&f=1&nofb=1&ipt=4071f818d48f20e4a4bad52098f8725c9d10355a4dc648a87dbc8aaea75aad25&ipo=images)
+#### image 2 - Level One Page
+
+![image](https://github.com/user-attachments/assets/60722b3e-d67b-4cff-af58-212daee05737)
 
 ---
 
@@ -46,13 +47,14 @@
 - [ ] Think of ideas on how to do what i want to do within my game
 - [ ] Look up more tricks that could be done for my game
 - [x] Complete the project
-- [x] ~~Finish the hw before midnight~~
+- [x] ~~Finish the project with all bonuses~~
 
 ---
 
 ### **_Credits_**
 
-##### Funny Images: [DuckDuckGo Search](http://www.duckduckgo.com)
+##### CSS: https://www.sliderrevolution.com/resources/css-modal/
+##### CSS: https://www.google.com/images
 
 
 
